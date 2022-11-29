@@ -1,0 +1,58 @@
+<?php 
+    session_start(); // Starts the session and it must be the FIRST code in the file.
+    
+
+    if ( $_SESSION["shoppingCart"] == NULL) {
+          //Cart doesn't exist, so create one
+        $_SESSION["shoppingCart"] = [];
+    } else {
+          //Cart exists so do nothing
+    }
+
+   
+
+    $qty = $_POST['qty'];
+    $size = $_POST['size'];
+    $color = $_POST['color'];
+    $uid = $_POST['uid'];
+  
+    $productDataJson = file_get_contents($_SERVER['DOCUMENT_ROOT']."/data.json");
+    $productData = json_decode($productDataJson, TRUE); // Converts the data into a PHP Array
+
+    foreach ($productData as $key => $val) {
+        if ($key == $uid) {
+            $productName = $val['name'];
+            $productPrice = $val['price'];
+
+        }
+       
+    }
+
+
+    $_SESSION["cartItem"]  = array("uid"=>$uid, "name"=>$productName, "price"=>$productPrice, "qty"=>$qty, "size"=>$size, "color"=>$color);
+   
+    array_push( $_SESSION["shoppingCart"],$_SESSION["cartItem"]);
+
+    
+
+    $_SESSION["cartMessage"] = "You added $qty $productName to your shopping cart.";
+
+    header('Location: /index.php');
+
+
+    // echo "<a href='/projects/cart/index.php'> Home Page </a> <br>";
+    // echo "qty - $qty <br>";
+    // echo "size - $size <br>";
+    // echo "color - $color <br>";
+    // echo "<hr>";
+
+
+    // echo '<pre>';
+    // var_dump($_SESSION['cartItem']);
+    // echo '</pre>';
+    // echo '<hr>';
+    // echo '<pre>';
+    // var_dump($_SESSION['shoppingCart']);
+    // echo '</pre>';
+
+?>

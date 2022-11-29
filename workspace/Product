@@ -1,0 +1,150 @@
+<?php
+session_start(); // Starts the session and it must be the FIRST code in the file.
+unset($_SESSION['siteOwner']);  // Deletes the session variable for "siteOwner".
+
+
+// Gets the product data from the items.json file.
+$productDataJson = file_get_contents($_SERVER['DOCUMENT_ROOT']."/data.json");
+$productData = json_decode($productDataJson, TRUE); // Converts the data into a PHP Array
+
+    $uid = $_GET{'uid'};
+
+    foreach ($productData as $key => $val) {
+        if ($key == $uid) {
+            $productName = $val['name'];
+            $price = $val['price'];
+            $description = $val['description'];
+            $gender = $val['gender'];
+            $size = $val['size'];
+            $color = $val['color'];
+            $images = $val['images'];
+            $qty = $val['qty'];
+        }
+       
+    }
+
+
+
+
+
+   
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Modern Business - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/style.css" rel="stylesheet" />
+       
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <?php require_once $_SERVER['DOCUMENT_ROOT'].'/mainNav.php'; ?>
+            <!-- Page Content-->
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-4"> <!-- START:: Left Side -->
+                            <div class="text-center mb-5">
+                                <h1 class="fw-bolder">Image</h1>
+                                <img class="img-fluid rounded-3 mb-5" id="imageDisplayed" src="<?php echo $images[0];?>" />
+                            </div>
+                        </div><!-- END:: Left Side -->
+                        <div class="col-lg-8"> <!-- START:: Right Side -->
+                            <div class="mb-5">
+                                <h1 class="fw-bolder" ><?php echo $productName?></h1>
+                                <p class="lead fw-normal text-muted mb-0"> Price: <span style="color: red;">  <?php echo money_format('$%i', $price );?></span></p>
+                                <hr>
+                                <p class="lead fw-normal text-muted mb-0"><?php echo $description?></p>
+                            </div>
+                            <br>
+                            
+                            
+                            <form action="/cartAddRedirect.php" method="POST">
+                                
+                           
+                            <br>
+                               
+                                Choose Your Color: <br>
+                                <select name="color" id="color" onChange="imageUpdate()">
+                                <?php 
+                                    foreach ($color as $colorz) {
+                                        echo '<option value="'.$colorz[0]."|".$colorz[1].'">'.$colorz[0].'</option>';
+                                    }
+                                        
+                                    ?>
+                                    
+                                    
+                                    
+                                </select> <br><br>
+                                Quantity: <br>
+                                
+                                   <select name="qty" id="qty">
+                                       <?php
+                                           $i = 0;
+                                           while ($i <=50){
+                                               echo '<option value="'.$i.'">'.$i.'</option>';
+                                               $i++;
+                                           }
+                                       ?>
+                                   </select>
+                                  <br><br>
+                                
+                                <input type="submit" value="Submit">
+                              
+                                <input type="hidden" name="uid" value="<?php echo $uid;?>">
+                                </form>
+                        </div> <!-- END:: Right Side -->
+                    </div> 
+                   
+                    <div class="row gx-5 justify-content-center">
+                    
+
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2021</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            function imageUpdate() {
+                var colorValue = document.getElementById("color").value;
+                colorValue = colorValue.split('|');
+                var colorName = colorValue[0];
+                var colorUrl = colorValue[1];
+                document.getElementById("imageDisplayed").src = colorUrl;
+                //alert(colorValue[0]);
+            }
+        </script>
+    </body>
+</html>

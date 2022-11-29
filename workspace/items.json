@@ -1,0 +1,158 @@
+
+{
+	"1001": {
+		"name": "Cave Cat Bed",
+		"price": 18.99,
+		"description": "Its perfect cave-like shape lends itself to privacy, comfort, and security for your precious pet.",
+		"type": "bed",
+        "pet": "cat",
+		"color": [
+			[" Grey", "/images/greyCatBed.png"],
+			[" Pattern", "/images/greyPatternCatBed.png"],
+			[" Blue", "/images/blueCatBed.png"]
+		],
+		"images": ["/images/greyCatBed.png", "/images/greyPatternCatBed.png", "/images/blueCatBed.png"]
+	},
+	"1002": {
+		"name": "Multicolor Catnip Toy",
+		"price": 7.99,
+		"description": "Make your cat happy: Cute and cuddly stuffing chew toy entertains your lovely pets",
+		"type": "toy",
+        "pet": "cat",
+		"color": [
+			[" Emojis", "/images/mulColorCatToy1.png"],
+			[" Cartoon", "/images/mulColorCatToy2.png"],
+			[" Plain", "/images/mulColorCatToy3.png"]
+		],
+		"images": ["/images/mulColorCatToy1.png", "/images/mulColorCatToy2.png", "/images/mulColorCatToy3.png"]
+	},
+	"1003": {
+		"name": "Circle Track Cat Toy",
+		"price": 16.99,
+		"description": "The Catnip Chase track toy is designed with bright green colors that will entice your cat to bat and paw at the spinning ball along the circular track.",
+		"type": "toy",
+        "pet": "cat",
+		"color": [
+			[" Green", "/images/roundGreenCatToy.png"],
+			[" Blue and Red", "/images/roundBlueCatToy.png"],
+			[" Orange", "/images/roundOrangeCatToy.png"]
+		],
+		"images": ["/images/roundGreenCatToy.png", "/images/roundBlueCatToy.png", "/images/roundOrangeCatToy.png"]
+	},
+	"1004": {
+		"name": "Luxury Dog Bed",
+		"price": 26.99,
+		"description": "Give your buddy the gift of sleeping on a cloud with the Bedsure Orthopedic Foam Couch Dog Bed. Bedsure’s quality products are made for and by a group of pet lovers. And they’re more than just everyday pet supplies.",
+		"type": "bed",
+        "pet": "dog",
+		"color": [
+			[" Brown", "/images/brownDogBed.png"],
+			[" Grey", "/images/greyDogBed.png"],
+			[" Blue", "/images/blueDogBed.png"]
+		],
+		"images": ["/images/brownDogBed.png", "/images/greyDogBed.png", "/images/blueDogBed.png"]
+	},
+	"1005": {
+		"name": "Variety Box Dog Toys",
+		"price": 20.99,
+		"description": "Our box features interactive dog toys, chew toys, toys with spiky balls, squeakers, and rope, plus toys for puppies and aggressive chewers.",
+		"type": "toy",
+        "pet": "dog",
+		"color": [
+			[" Camping", "/images/campfireDogToy.png"],
+			[" Sweets", "/images/sweetsDogToy.png"],
+			[" Beach", "/images/beachDogToy.png"]
+		],
+		"images": ["/images/campfireDogToy.png", "/images/sweetsDogToy.png", "/images/beachDogToy.png"]
+	},
+	"1006": {
+		"name": "Dog Puzzle Toy",
+		"price": 13.99,
+		"description": "This is a fun interactive puppy toy that provides games for pets.",
+		"type": "toy",
+        "pet": "dog",
+		"color": [
+			[" Pink", "/images/pinkPuzzleDogToy.png"],
+			[" Light Blue", "/images/lightBluePuzzleDogToy.png"],
+			[" Blue", "/images/bluePuzzleDogToy.png"]
+		],
+		"images": ["/images/pinkPuzzleDogToy.png", "/images/lightBluePuzzleDogToy.png", "/images/bluePuzzleDogToy.png"]
+	},
+	"1007": {
+		"name": "Adjustable Cat Harness and Leash",
+		"price": 12.99,
+		"description": "This cat harness is made of lightweight, soft, breathable air-mesh fabric, with soft edge and resilient cushioning, giving extra comfort and protection. This all weather pet vest won't be too bulky to restrain your pet's movement or overheat your lovely pet when hot, and reinforced stitching allows you to walk your pet with confidence.",
+		"type": "leash",
+        "pet": "cat",
+		"color": [
+			[" Black", "/images/blackCatLeash.png"],
+			[" Pink", "/images/pinkCatLeash.png"],
+			[" Blue", "/images/blueCatLeash.png"]
+		],
+		"images": ["/images/blackCatLeash.png", "/images/pinkCatLeash.png", "/images/blueCatLeash.png"]
+	},
+	"1008": {
+		"name": "Reflective Strong Dog Leash",
+		"price": 10.99,
+		"description": "Features soft padded handles for amazing comfortable, just enjoy the feeling walks with your dog and protects your hand from rope burn.",
+		"type": "leash",
+        "pet": "dog",
+		"color": [
+			[" Black", "/images/blackDogLeash.png"],
+			[" Blue", "/images/blueDogLeash.png"],
+			[" Purple", "/images/purpleDogLeash.png"]
+		],
+		"images": ["/images/blackDogLeash.png", "/images/blueDogLeash.png", "/images/purpleDogLeash.png"]
+	},
+	"1009": {
+		"name": "Knitted Pet Sweater",
+		"price": 13.99,
+		"description": "There is a traction leash hole near the neckline of the sweater, which is convenient for you to take your pet out for a walk.",
+		"type": "clothing",
+        "pet": "dog",
+		"color": [
+			[" Black", "/images/blackPetSweater.png"],
+			[" Grey", "/images/greyPetSweater.png"],
+			[" Pink", "/images/pinkPetSweater.png"]
+		],
+		"images": ["/images/blackPetSweater.png", "/images/greyPetSweater.png", "/images/pinkPetSweater.png"]
+	},
+	"1010": {
+		"name": "Soft Pet Pajamas",
+		"price": 11.99,
+		"description": "The pajamas are made of super soft and comfortable fabrics. Not only will they not do any harm to the fur of pets, but they can also keep warm in the cold winter.",
+		"type": "clothing",
+        "pet": "cat",
+		"color": [
+			[" Black", "/images/blackPajamas.png"],
+			[" Grey", "/images/greyPajamas.png"],
+			[" Pink", "/images/pinkPajamas.png"]
+		],
+		"images": ["/images/blackPajamas.png", "/images/greyPajamas.png", "/images/pinkPajamas.png"]
+        },
+	"1011": {
+		"name": "Hard-Sided Cat Carrier",
+		"price": 25.99,
+		"description": "Dog carrier made of durable, easy-to-clean plastic & includes built in carrying handle. Spree features a patented, quick & easy 5 step.",
+		"type": "carrier",
+        "pet": "cat",
+		"color": [
+			[" Blue", "/images/blueCatCarrier.png"],
+			[" Green", "/images/greenCatCarrier.png"],
+			[" Red", "/images/redCatCarrier.png"]
+		],
+		"images": ["/images/blueCatCarrier.png", "/images/greenCatCarrier.png", "/images/redCatCarrier.png"]},
+	"1012": {
+		"name": "Wire Dog Kennel",
+		"price": 40.99,
+		"description": "Crate is equipped with front and side doors that latch securely with two-side bolt latches. Keep the doors open for a perfect den-like, personal space that your Dog Cat or Puppy will love to call home.",
+		"type": "carrier",
+        "pet": "dog",
+		"color": [
+			[" Black", "/images/blackDogKennel.png"],
+			[" Blue", "/images/blueDogKennel.png"],
+			[" Pink", "/images/pinkDogKennel.png"]
+		],
+		"images": ["/images/blackDogKennel.png", "/images/blueDogKennel.png", "/images/pinkDogKennel.png"]
+	}
+}

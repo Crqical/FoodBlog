@@ -1,0 +1,72 @@
+{
+    "1001": {
+        "name": "Arbys",
+        "url": "arbys.com\/",
+        "img": "https:\/\/www.chewboom.com\/wp-content\/uploads\/2020\/03\/Arby%E2%80%99s-Launches-2-For-6-Everyday-Value-Deal-678x381.jpg",
+        "views": 33,
+        "clicks": 12
+    },
+    "1002": {
+        "name": "Wendys",
+        "url": "wendys.com\/",
+        "img": "https:\/\/images-cdn.ispot.tv\/ad\/ZLW7\/default-large.jpg",
+        "views": 50,
+        "clicks": 7
+    },
+    "1003": {
+        "name": "Subway",
+        "url": "subway.com",
+        "img": "https:\/\/www.subway.com\/-\/media\/Base_Arabic\/English\/Promotions\/Marquees\/Mobile\/HomeBanner\/jan-2018-all-markets-mobile-en.jpg",
+        "views": 37,
+        "clicks": 8
+    },
+    "1004": {
+        "name": "coke",
+        "url": "us.coca-cola.com\/",
+        "img": "https:\/\/www.wordstream.com\/wp-content\/uploads\/2021\/07\/persuasive-ads-coca-cola.jpg",
+        "views": 46,
+        "clicks": 38
+    },
+    "1005": {
+        "name": "KFC",
+        "url": "kfc.com",
+        "img": "https:\/\/www.inma.org\/files\/images\/blogs\/feature_photos\/print_september20_hannah_2020-in-ads-1800.jpg",
+        "views": 52,
+        "clicks": 5
+    },
+    "1006": {
+        "name": "Skittles",
+        "url": "Skittles.com",
+        "img": "https:\/\/o.quizlet.com\/YeYDSUwgmGDFuqltrrQN8w_b.jpg",
+        "views": 34,
+        "clicks": 8
+    },
+    "1007": {
+        "name": "Doritos",
+        "url": "Doritos.com",
+        "img": "https:\/\/www.gannett-cdn.com\/presto\/2020\/07\/14\/USAT\/e98ba2b4-25c4-47f4-af22-39f22959f74b-CFH_Hero_Image.jpg",
+        "views": 27,
+        "clicks": 7
+    },
+    "1008": {
+        "name": "Chick-Fil-A",
+        "url": "chick-fil-a.com\/",
+        "img": "http:\/\/d1fd34dzzl09j.cloudfront.net\/Images\/CFACOM\/Stories%20Images\/2015\/07%20July\/20%20Years%20of%20Cows\/Original%20EMC%20Billboard.JPG",
+        "views": 34,
+        "clicks": 15
+    },
+    "1009": {
+        "name": "Chipotle",
+        "url": "Chipotle.com",
+        "img": "https:\/\/i.ytimg.com\/vi\/YxQQhMT33mg\/maxresdefault.jpg",
+        "views": 41,
+        "clicks": 9
+    },
+    "1010": {
+        "name": "Baskin Robins",
+        "url": "baskinrobbins.com\/en",
+        "img": "https:\/\/s3-prod.adage.com\/s3fs-public\/20201222-Baskin-Robbins-Cup-Suits_3x2.jpg",
+        "views": 33,
+        "clicks": 10
+    }
+}
